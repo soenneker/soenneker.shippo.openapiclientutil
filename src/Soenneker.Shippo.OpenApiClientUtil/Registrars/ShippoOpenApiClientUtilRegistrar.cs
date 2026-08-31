@@ -6,12 +6,12 @@ using Soenneker.Shippo.OpenApiClientUtil.Abstract;
 namespace Soenneker.Shippo.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers the lazily initialized Shippo API client.
 /// </summary>
 public static class ShippoOpenApiClientUtilRegistrar
 {
     /// <summary>
-    /// Adds <see cref="ShippoOpenApiClientUtil"/> as a singleton service. <para/>
+    /// Adds the Shippo API client utility as a singleton service. <para/>
     /// </summary>
     public static IServiceCollection AddShippoOpenApiClientUtilAsSingleton(this IServiceCollection services)
     {
@@ -22,7 +22,7 @@ public static class ShippoOpenApiClientUtilRegistrar
     }
 
     /// <summary>
-    /// Adds <see cref="ShippoOpenApiClientUtil"/> as a scoped service. <para/>
+    /// Adds the Shippo API client utility as a scoped service backed by the singleton HTTP client provider. <para/>
     /// </summary>
     public static IServiceCollection AddShippoOpenApiClientUtilAsScoped(this IServiceCollection services)
     {
