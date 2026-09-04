@@ -12,6 +12,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Shippo.OpenApiClientUtil;
 
+/// <inheritdoc cref="IShippoOpenApiClientUtil" />
 public sealed class ShippoOpenApiClientUtil : IShippoOpenApiClientUtil
 {
     private readonly AsyncSingleton<ShippoOpenApiClient> _client;
