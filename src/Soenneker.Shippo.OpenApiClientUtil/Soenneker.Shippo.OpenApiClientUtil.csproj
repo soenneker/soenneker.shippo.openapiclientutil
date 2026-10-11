@@ -45,6 +45,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Shippo.HttpClients" Version="4.0.130" />
-        <PackageReference Include="Soenneker.Shippo.OpenApiClient" Version="4.0.48" />
+        <PackageReference Include="Soenneker.Shippo.OpenApiClient" Version="4.0.49" />
     </ItemGroup>
 </Project>
